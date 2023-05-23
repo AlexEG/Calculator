@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./dist/index.css" />
+    <title>Calculator</title>
+  </head>
+  <body class="flex justify-center items-center h-screen bg-neutral-100">
+    <div class="bg-neutral-950 h-[600px] w-[450px] selection:text-green-400">
+      <section
+        class="output bg-neutral-800 w-full h-28 mb-2 text-neutral-50 font-semibold text-4xl p-4 text-right"
+      >
+        <div data-previous-operand class="previous-operand"></div>
+        <div data-current-operand class="current-operand"></div>
+      </section>
+
+      <div
+        class="grid grid-cols-4 grid-rows-5 gap-1 h-[calc(100%-7.5rem)] w-full text-4xl text-white font-semibold"
+      >
+        <button
+          data-all-clear
+          class="btn-calc col-start-1 col-end-3 hover:bg-neutral-400 hover:text-neutral-900 active:bg-neutral-300"
+        >
+          AC
+        </button>
+        <button
+          data-delete
+          class="btn-calc hover:bg-neutral-400 hover:text-neutral-900 active:bg-neutral-300"
+        >
+          DEL
+        </button>
+        <button
+          data-operation
+          class="btn-calc hover:bg-neutral-400 hover:text-neutral-900 active:bg-neutral-300"
+        >
+          ÷
+        </button>
+        <button
+          data-number
+          class="btn-calc hover:bg-neutral-400 active:bg-neutral-300 hover:text-neutral-900"
+        >
+          1
+        </button>
+        <button
+          data-number
+          class="btn-calc hover:bg-neutral-400 hover:text-neutral-900 active:bg-neutral-300"
+        >
+          2
+        </button>
+        <button
+          data-number
+          class="btn-calc hover:bg-neutral-400 hover:text-neutral-900 active:bg-neutral-300"
+        >
+          3
+        </button>
+        <button
+          data-operation
+          class="btn-calc hover:bg-neutral-400 hover:text-neutral-900 active:bg-neutral-300"
+        >
+          *
+        </button>
+        <button
+          data-number
+          class="btn-calc hover:bg-neutral-400 hover:text-neutral-900 active:bg-neutral-300"
+        >
+          4
+        </button>
+        <button
+          data-number
+          class="btn-calc hover:bg-neutral-400 hover:text-neutral-900 active:bg-neutral-300"
+        >
+          5
+        </button>
+        <button
+          data-number
+          class="btn-calc hover:bg-neutral-400 hover:text-neutral-900 active:bg-neutral-300"
+        >
+          6
+        </button>
+        <button
+          data-operation
+          class="btn-calc hover:bg-neutral-400 hover:text-neutral-900 active:bg-neutral-300"
+        >
+          +
+        </button>
+        <button
+          data-number
+          class="btn-calc hover:bg-neutral-400 hover:text-neutral-900 active:bg-neutral-300"
+        >
+          7
+        </button>
+        <button
+          data-number
+          class="btn-calc hover:bg-neutral-400 hover:text-neutral-900 active:bg-neutral-300"
+        >
+          8
+        </button>
+        <button
+          data-number
+          class="btn-calc hover:bg-neutral-400 hover:text-neutral-900 active:bg-neutral-300"
+        >
+          9
+        </button>
+        <button
+          data-operation
+          class="btn-calc hover:bg-neutral-400 hover:text-neutral-900 active:bg-neutral-300"
+        >
+          -
+        </button>
+        <button
+          data-number
+          class="btn-calc hover:bg-neutral-400 hover:text-neutral-900 active:bg-neutral-300"
+        >
+          0
+        </button>
+        <button
+          data-number
+          class="btn-calc hover:bg-neutral-400 hover:text-neutral-900 active:bg-neutral-300"
+        >
+          .
+        </button>
+        <button
+          data-equals
+          class="btn-calc col-span-2 hover:bg-neutral-400 hover:text-neutral-900 active:bg-neutral-300"
+        >
+          =
+        </button>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>

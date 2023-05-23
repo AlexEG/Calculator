@@ -1,0 +1,22 @@
+{
+  "name": "calculator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx tailwindcss -i ./src/index.css -o ./dist/index.css --watch --minidy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexEG/Calculator.git"
+  },
+  "author": "AlexEG",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlexEG/Calculator/issues"
+  },
+  "homepage": "https://github.com/AlexEG/Calculator#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.3.2"
+  }
+}

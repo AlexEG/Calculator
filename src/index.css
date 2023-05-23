@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+  .btn-calc {
+    @apply bg-neutral-500 transition-colors duration-200 flex cursor-pointer justify-center items-center;
+  }
+}
